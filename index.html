@@ -9,15 +9,13 @@
   </style>
 </head>
 <body>
-  <div id="swagger-ui"></div>
-  <script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
-  <script>
-    window.onload = function() {
-      SwaggerUIBundle({
-        url: "https://api.swaggerhub.com/apis/MHHSPROGRAMME/fmar-specification-api-0.1draft/0.1-draft",
-        dom_id: "#swagger-ui"
-      });
-    };
+  <redoc
+    spec-url="https://api.swaggerhub.com/apis/MHHSPROGRAMME/fmar-specification-api-0.6draft/0.6.0-draft">
+  </redoc>
+
+  <script
+    type="module"
+    src="https://cdn.redoc.ly/redoc/v3.x/bundles/redoc.standalone.js">
   </script>
 </body>
 </html>
