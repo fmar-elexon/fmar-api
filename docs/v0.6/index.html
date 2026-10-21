@@ -8,8 +8,17 @@
       body { margin: 0; padding: 0; }
     </style>
   </head>
+  
   <body>
-    <redoc spec-url="https://api.swaggerhub.com/apis/MHHSPROGRAMME/fmar-specification-api-0.6draft/0.6.0-draft"></redoc>
-    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
-  </body>
+  <redoc id="api-docs"></redoc>
+
+  <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+  <script>
+    Redoc.init(
+      "https://api.swaggerhub.com/apis/MHHSPROGRAMME/fmar-specification-api-0.6draft/0.6.0-draft",
+      {},
+      document.getElementById("api-docs")
+    );
+  </script>
+</body>
 </html>
